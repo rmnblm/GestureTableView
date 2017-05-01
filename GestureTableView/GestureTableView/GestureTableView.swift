@@ -32,7 +32,7 @@ public class GestureTableView: UITableView {
 
     public var draggingViewOpacity: Float = 1.0
     public var draggingRowHeight: CGFloat = 50.0
-    public var draggingZoomScale: CGFloat = 1.2
+    public var draggingZoomScale: CGFloat = 1.1
     public var scrollRate: CGFloat = 0.0
 
     private var longPressGestureRecognizer: UILongPressGestureRecognizer!
