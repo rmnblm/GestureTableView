@@ -1,15 +1,10 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
     var data = [
         ("🍎", "Apple"), ("🍐", "Pear"), ("🍍", "Pineapple"), ("🍓", "Strawberry"),
         ("🍇", "Grape"), ("🍉", "Watermelon"), ("🍌", "Banana"), ("🥝", "Kiwi")
     ]
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 extension ViewController {
@@ -24,9 +19,7 @@ extension ViewController {
         let item = data.remove(at: sourceIndexPath.row)
         data.insert(item, at: destinationIndexPath.row)
     }
-}
 
-extension ViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
